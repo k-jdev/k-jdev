@@ -12,7 +12,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  // Загрузка задач из localStorage при монтировании компонента
+  // Загрузка задач из localStorage при монтировании компонентa
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     setTasks(storedTasks);
